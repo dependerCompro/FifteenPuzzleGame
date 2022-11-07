@@ -1,27 +1,29 @@
-// document.body.innerHTML = "<h1> Hello Duniya! </h1>";
-var size = 4;
 var values;
+var interval;
+var size = 4;
+var seconds = 0;
+var minutes = 0;
+var moves = 0;
 var emptyX, emptyY;
 var fieldCells = createField();
 var LEFT = { dx: -1, dy: 0 };
 var RIGHT = { dx: 1, dy: 0 };
 var UP = { dx: 0, dy: -1 };
 var DOWN = { dx: 0, dy: 1 };
-var seconds = 0;
-var minutes = 0;
-var appendSec = document.getElementById("timer-sec");
-var appendMin = document.getElementById("timer-min");
 var buttonStart = document.getElementById("button-start");
 var buttonReset = document.getElementById("button-reset");
-var interval;
-var moves = 0;
+var appendSec = document.getElementById("timer-sec");
+var appendMin = document.getElementById("timer-min");
 var appendMoves = document.getElementById("moves");
 var appendPreviousSeconds = document.getElementById("previous-sec");
 var appendPreviousMinutes = document.getElementById("previous-min");
 var appendPreviousMoves = document.getElementById("previous-moves");
-appendPreviousSeconds.innerHTML = localStorage.getItem("seconds") || "00";
-appendPreviousMinutes.innerHTML = localStorage.getItem("minutes") || "00";
-appendPreviousMoves.innerHTML = localStorage.getItem("moves") || "0";
+
+function getHistory() {
+  appendPreviousSeconds.innerHTML = localStorage.getItem("seconds") || "00";
+  appendPreviousMinutes.innerHTML = localStorage.getItem("minutes") || "00";
+  appendPreviousMoves.innerHTML = localStorage.getItem("moves") || "0";
+}
 
 function createField() {
   var cells = [];
@@ -152,11 +154,7 @@ function gameOver() {
   return true;
 }
 
-const timer = () => {
-  var ele = document.getElementById("timer");
-};
-
-document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", (e) => {
   // console.log(e);
   if (buttonStart.innerHTML == "Pause") {
     switch (e.key) {
@@ -210,6 +208,7 @@ document.addEventListener("keydown", function (e) {
 
 function init() {
   values = createInitialValues();
+  getHistory();
   shuffle();
   draw();
 }
