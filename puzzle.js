@@ -85,7 +85,7 @@ function makeMove(move) {
 
 function shuffle() {
   var options = [LEFT, RIGHT, UP, DOWN];
-  var iterations = 5;
+  var iterations = 100;
   for (var i = 0; i < iterations; i++) {
     var move = options[Math.floor(Math.random() * options.length)];
     makeMove(move);
