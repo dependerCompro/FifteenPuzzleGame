@@ -1,0 +1,202 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    /* background-color: white; */
+    /* z-index: 2; */
+}
+.wrapper{
+    width: 50rem;
+    text-align: center;
+    justify-content: center;
+    /* border: 2px solid cyan; */
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.move-n-time__cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.moves{
+    padding: 0.5rem;
+}
+.time{
+    padding: 0.5rem;
+}
+.move-n-time__buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.move-n-time__buttons button{
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    border-radius: 0.5rem;
+}
+.header__title{
+    padding: 0.5rem;
+    font-size: larger;
+}
+.puzzle-board{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.board{
+    border: 0.30rem solid black;
+    display: flex;
+    flex-direction: column;
+}
+.cell{
+    width: 5rem;
+    height: 5rem;
+    border: 0.1rem solid black;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.onload-popup{
+    position: absolute;
+    background: #dbd7d2;
+    border-radius: 0.38rem;
+    padding: 2rem;
+    left: 49%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.onload-popup button{
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    border-radius: 0.5rem;
+}
+#scoreboard-button{
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.scoreboard-card{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #e4e3e2;
+    /* width: 100%; */
+    height: 20rem;
+    border-radius: 0.38rem;
+    font-size: larger;
+    visibility: hidden;
+    align-items: center;
+    overflow-x:auto;
+    overflow-y: auto;
+    margin-left: 0.5rem;
+}
+
+.scoreboard-card__wrapper{
+    padding: 2rem;
+}
+
+/* .scoreboard-card{
+    position: absolute;
+    background: #E5E4E2;
+    border-radius: 0.38rem;
+    padding: 2rem;
+    left: 0%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    visibility: hidden;
+} */
+
+#scoreboard-card__close_button{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: right;
+    /* border: 2px solid red; */
+    width: 100%;
+    visibility: hidden;
+}
+
+#scoreboard-card__close_button button{
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border:none;
+}
+
+
+/* #scoreboard-card__close_button{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    border-radius: 50%;
+    visibility: hidden;   
+} */
+
+.scoreboard-table{
+    /* position: absolute; */
+    /* border: 2px solid red; */
+    /* display: flex;
+    flex-direction: column; */
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.timestamp-cell-th {
+    /* border: 1px solid green; */
+    /* padding: 0.5rem 5rem; */
+    width: 18rem;
+}
+
+.moves-cell-th {
+    /* border: 1px solid green; */
+    /* padding: 0.5rem 3rem; */
+    width: 8rem;
+}
+
+.time-cell-th {
+    /* border: 1px solid green; */
+    /* padding: 0.5rem 5rem;  */
+    width: 16rem;
+}
+
+.timestamp-cell {
+    /* border: 1px solid blue; */
+    width: 17.2rem;
+}
+
+.moves-cell {
+    /* border: 1px solid blue; */
+    width: 10.4rem;
+}
+
+.time-cell {
+    /* border: 1px solid blue; */
+    /* padding: 0.5rem 1rem;  */
+    width: 13rem;
+}

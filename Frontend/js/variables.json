@@ -1,0 +1,17 @@
+{
+  "values": [],
+  "interval": null,
+  "size": 4,
+  "seconds": 0,
+  "minutes": 0,
+  "moves": 0,
+  "emptyX": null,
+  "emptyY": null,
+  "LEFT": { "dx": -1, "dy": 0 },
+  "RIGHT": { "dx": 1, "dy": 0 },
+  "UP": { "dx": 0, "dy": -1 },
+  "DOWN": { "dx": 0, "dy": 1 },
+  "options": ["LEFT", "RIGHT", "UP", "DOWN"],
+  "fieldCells": [],
+  "state": 0
+}

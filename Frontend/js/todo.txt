@@ -1,0 +1,15 @@
+1. Moves need to be constrained at the border of field. --> Done
+2. Only show the last 5 scores. --> Done
+3. Remove redundant/unrequired console.logs --> Done
+4. Last state not being updated on Game Over --> Done by reducing timeout time. Need more experimenting.
+5. if Last state is game over, don't show the popup banner. --> Done
+9. Add mouse events. --> Done
+10. Text-alignment in scorecard. --> Done (But need to redisign scoreboard)
+12. Modify scoreboard Close button. --> Done
+14. replace div in scoreboard html with tables --> Done
+
+11. * remove body horizontal overflow. -> May be happening because of scoreboard.
+13. Add scroll to scoreboard and display all stats.
+6. Make overlay background blur.
+7. Disable background functionalities when under overlay.
+8. Add media queries for responsiveness.
