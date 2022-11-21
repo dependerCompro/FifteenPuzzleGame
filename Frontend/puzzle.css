@@ -78,6 +78,7 @@ body{
 }
 
 .onload-popup button{
+    margin-top: 0.5rem;
     width: 4rem;
     height: 2rem;
     cursor: pointer;
@@ -99,32 +100,19 @@ body{
     display: flex;
     flex-direction: column;
     background: #e4e3e2;
-    /* width: 100%; */
     height: 20rem;
     border-radius: 0.38rem;
     font-size: larger;
     visibility: hidden;
-    align-items: center;
-    overflow-x:auto;
-    overflow-y: auto;
-    margin-left: 0.5rem;
+    width: 90%;
+    padding: 1rem;
+    max-width: 700px;
 }
 
 .scoreboard-card__wrapper{
-    padding: 2rem;
+    overflow-y: auto;
+    overflow-x: auto;
 }
-
-/* .scoreboard-card{
-    position: absolute;
-    background: #E5E4E2;
-    border-radius: 0.38rem;
-    padding: 2rem;
-    left: 0%;
-    top: 0%;
-    transform: translate(-50%, -50%);
-    font-size: larger;
-    visibility: hidden;
-} */
 
 #scoreboard-card__close_button{
     position: -webkit-sticky;
@@ -138,65 +126,36 @@ body{
 }
 
 #scoreboard-card__close_button button{
-    border-radius: 50%;
+    border-radius: 30%;
     cursor: pointer;
     outline: none;
     border:none;
 }
 
-
-/* #scoreboard-card__close_button{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    outline: none;
-    border:none;
-    border-radius: 50%;
-    visibility: hidden;   
-} */
-
 .scoreboard-table{
-    /* position: absolute; */
-    /* border: 2px solid red; */
-    /* display: flex;
-    flex-direction: column; */
-    overflow-x: auto;
-    overflow-y: auto;
+    min-width: 550px;
 }
 
 .timestamp-cell-th {
-    /* border: 1px solid green; */
-    /* padding: 0.5rem 5rem; */
     width: 18rem;
 }
 
 .moves-cell-th {
-    /* border: 1px solid green; */
-    /* padding: 0.5rem 3rem; */
     width: 8rem;
 }
 
 .time-cell-th {
-    /* border: 1px solid green; */
-    /* padding: 0.5rem 5rem;  */
     width: 16rem;
 }
 
 .timestamp-cell {
-    /* border: 1px solid blue; */
     width: 17.2rem;
 }
 
 .moves-cell {
-    /* border: 1px solid blue; */
     width: 10.4rem;
 }
 
 .time-cell {
-    /* border: 1px solid blue; */
-    /* padding: 0.5rem 1rem;  */
     width: 13rem;
 }
